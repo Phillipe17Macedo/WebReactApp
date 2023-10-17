@@ -1,6 +1,6 @@
-import React ,{ useState } from 'react';
+import React  from 'react';
 import './App.css';
-import { Head, Navbar, Search, Footer } from './Common';
+import {Navbar, Search, Footer } from './Common';
 
 function Home(){
     const handleMouseOver = (event) => {
@@ -12,23 +12,22 @@ function Home(){
     };
 
     return(
-        <html>
-        <Head />
-        <body>
+        <html lang='pt-br'>
+        <body id="body">
             {/* Barra de Navegação importada do arquivo "Common"*/}
             <Navbar/>
 
             {/* Barra de Busca (importada) */}
             <Search nome="Home"/>
-
             <div id="all">
-            <img id="big" src="img/adventureTime.gif" />
+            <img id="big" src="img/reactNative.png" />
             <ul>
-                <li><img src="img/adventure_Time.gif" className="smally" onMouseOver={handleMouseOver}/></li>
-                <li><img src="img/BlackHole.png" className="smally" onMouseOver={handleMouseOver}/></li>
-                <li><img src="img/blackhole1.png" className="smally" onMouseOver={handleMouseOver}/></li>
-                <li><img src="img/blackHole2.png" className="smally" onMouseOver={handleMouseOver}/></li>
-                <li><img src="img/Universe.png" className="smally" onMouseOver={handleMouseOver}/></li>
+                <li><img src="img/Etapa_1.png" className="smally" onMouseOver={handleMouseOver}/></li>
+                <li><img src="img/Etapa_1.1.png" className="smally" onMouseOver={handleMouseOver}/></li>
+                <li><img src="img/Etapa_2.png" className="smally" onMouseOver={handleMouseOver}/></li>
+                <li><img src="img/Etapa_2.1.png" className="smally" onMouseOver={handleMouseOver}/></li>
+                <li><img src="img/Etapa_2.2.png" className="smally" onMouseOver={handleMouseOver}/></li>
+                <li><img src="img/Etapa_2.3.png" className="smally" onMouseOver={handleMouseOver}/></li>
             </ul>
             </div>
 

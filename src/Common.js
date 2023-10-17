@@ -1,4 +1,3 @@
-import Sobre from './Sobre.js';
 import { Link } from 'react-router-dom';
 
 export function Head(){
@@ -26,8 +25,7 @@ export function Search(vals){
 export function Navbar(){
   return (
     <header id="header">
-      <div id="containerTopBar">
-        <nav id="navbar">
+        <nav id="navbar"></nav>
           <ul>
             {/* Barra de Navegação */}
             <img src="img/icons8-reagir-40.png" alt="" className="img-logo-icon" />
@@ -35,8 +33,6 @@ export function Navbar(){
             <li><Link className="linkBarraNav" to='/Video'>Video</Link></li>
             <li><Link className="linkBarraNav" to='/Sobre'>Sobre nós</Link></li>
           </ul>
-        </nav>
-      </div>
     </header>
   )
 }

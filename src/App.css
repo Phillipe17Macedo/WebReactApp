@@ -27,7 +27,7 @@
   color: #EBEEF2;
 }
 /*===> Container Big Bar <===*/
-.big-search-bar{
+#big-search-bar{
   width: 100%;
   height: 50px;
   position: relative;

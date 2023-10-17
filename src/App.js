@@ -1,6 +1,5 @@
-import React ,{ useState } from 'react';
+import React  from 'react';
 import './App.css';
-import { Head, Navbar, Search, Footer } from './Common';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './Home';
 import Video from './Video';
@@ -14,8 +13,8 @@ function App() {
         <Router>
           <Routes>
             <Route exact path="/" element={<Home/>} />
-            <Route path="/Video" element={<Video/>} />
-            <Route path="/Sobre" element={<Sobre/>} />
+            <Route exact path="/Video" element={<Video/>} />
+            <Route exact path="/Sobre" element={<Sobre/>} />
           </Routes>
         </Router>
       </div>
